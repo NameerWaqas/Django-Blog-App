@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div id="bodyDS"></div>
+    <div id='contentDs'>
+        {% for blog in blogs%}
+        <article class='DsBlog'>
+            <h1><a href="/datascience/blogs/{{blog.pk}}">{{blog.title}}</a></h1>
+            <p>{{blog.header| linebreaks}} <br />{{blog.section1| linebreaks}} <br />{{blog.section2| linebreaks}} <br />{{blog.section3| linebreaks}} <br />{{blog.section4| linebreaks}} <br />{{blog.footer| linebreaks}}</p>
+        </article>
+        {% endfor %}
+    </div>
+    {% endblock content %}
+</body>
+</html>

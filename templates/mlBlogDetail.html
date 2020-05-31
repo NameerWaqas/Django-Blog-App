@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div id='bodyML' style="filter: blur(10px);">
+    </div>
+    <div  id = 'pyProgBlogDetail'>
+        <article>
+            <h1>{{object.title}}</h1>
+            <p>{{object.header| linebreaks}} <br />{{object.section1| linebreaks}} <br />{{object.section2| linebreaks}} <br />{{object.section3| linebreaks}} <br />{{object.section4| linebreaks}} <br />{{object.footer| linebreaks}}</p>
+
+        </article>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Styling home.html & base.html */
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+
+#homepageimgdiv {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/homeimg.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#homepageimg {
+    width: 100vw;
+    height: inherit;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+
+}
+#sign {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 600%;
+    text-align: center !important;
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+#contentDiv {
+    position: absolute;
+    top: 100vh;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+}
+
+.contentSection {
+    width: 100%;
+    height: 92vh;
+    /* background-color: blue;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#contentSection1 {
+    background-image: url("../images/contentSection1.jpg");
+    background-size: cover;
+}
+
+#contentSection2 {
+    background-image: url("../images/contentsection2.jpg");
+    background-size: cover;
+}
+
+#contentSection3 {
+    background-image: url("../images/contentsection3.jpg");
+    background-size: cover;
+}
+
+#contentSection4 {
+    background-image: url("../images/contentsection4.jpg");
+    background-size: cover;
+}
+
+
+section>p {
+    text-align: center;
+}
+
+/* EndStyling home.html & base.html */
+
+/* Styling pyProgramming.html */
+
+#bodyPyProgram {
+    position: fixed;
+    top: 9vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/contentSection1.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+#contentPyProgram {
+    z-index: 2;
+    position: absolute;
+    top: 9vh;
+    color: rgb(202, 202, 202);
+}
+
+.PyProgramBlog {
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, rgb(202, 202, 202));
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+article>p {
+    text-align: justify;
+}
+#pyProgBlogDetail{
+    position: absolute;
+    top: 9vh;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+/* EndStyling pyProgramming.html and detail*/
+
+/* Styling pyDevelopment.html */
+
+#bodyPyDev {
+    position: fixed;
+    top: 9vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/contentSection2.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+#contentPyDevelopment {
+    z-index: 2;
+    position: absolute;
+    top: 9vh;
+    color: white;
+}
+
+.PyDevelopmentBlog{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, white);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+/* EndStyling pyDevelopment.html */
+
+/* Styling ml.html */
+
+#bodyML {
+    position: fixed;
+    top: 9vh;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/contentSection3.jpg");
+    background-size: cover;
+}
+#contentMl {
+    z-index: 2;
+    position: absolute;
+    top: 9vh;
+    color: white;
+}
+
+.MlBlog{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, white);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+/* EndStyling ml.html */
+
+/* Styling dataScience.html */
+
+#bodyDS {
+    position: fixed;
+    top: 9vh;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/contentSection4.jpg");
+    background-size: cover;
+}
+#contentDs {
+    z-index: 2;
+    position: absolute;
+    top: 9vh;
+    color: white;
+}
+
+.DsBlog{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, white);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+/* EndStyling dataScience.html */
+a{
+    color: inherit;
+}
+a:hover{
+    color: grey;
+}

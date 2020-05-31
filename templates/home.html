@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+<!-- {% load static%} -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% block content%}
+    <!-- <h2>In h2</h2> -->
+    <div id='homepageimgdiv'>
+        <p id='sign'>Nameer Writes</p>
+    </div>
+    <div id='contentDiv'>
+        <section class="contentSection" id='contentSection1'>
+            <h2><a class="btn btn-light" href="/pyprogramming">Python Programming</a></h2>
+            <p>Python is a powerful general-purpose programming language. It is used in web development, data science, creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners.</p>
+        </section>
+        <section class="contentSection" id='contentSection2'>
+            <h2><a class="btn btn-light" href="/pydevelopment">Python Development</a></h2>
+            <p>Python is widely used for developing large scale web applications that are not possible to build and develop using other languages like . NET and PHP as Python is very much powerful in supporting many ultra features that is very easily executed with different frameworks like Django, Flask, web2py and many more.</p>
+        </section>
+        <section class="contentSection" id='contentSection3'>
+            <h2><a class="btn btn-light" href="/ml">Machine Learning</a></h2>
+            <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.</p>
+        </section>
+        <section class="contentSection" id='contentSection4'>
+            <h2><a class="btn btn-light" href="/datascience">Data Science</a></h2>
+            <p>Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data.</p>
+        </section>
+        <section class="contentSection"  id='contentSection5'>
+            <h2><a class="btn btn-light" href="/">Books Summary</a></h2>
+            <p>Books play an important role in the success of a person.If a person gets a book when he actually needs it,it's become a life changing source for him.In this section i will cover the summaries of some life changing books i read.</p>
+        </section>
+    </div>
+    {% endblock content%}
+</body>
+
+</html>
